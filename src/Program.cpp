@@ -2,7 +2,7 @@
 #include "visual/widgets/ButtonWidget.h"
 #include "visual/renderer/Renderer.h"
 
-Program::Program() : world(40,40){
+Program::Program() : world(80,80){
 	paused = false;
 	worldUpdater = new world::ConwayWorldUpdater();
 	worldSaver = new world::TextWorldSaver();

@@ -23,7 +23,7 @@ namespace world {
 	World TextWorldSaver::loadWorld(){
 		std::ifstream file("worldsave.txt");
 		if (!file.is_open()){
-			return World(40,40);
+			return World(80,80);
 		}
 		std::string line;
 		std::getline(file, line);

@@ -10,7 +10,7 @@
 #include <functional>
 
 class Program{
-	const int MIN_UPDATE_TIME = 100;
+	const int MIN_UPDATE_TIME = 10;
 	bool paused;
 	visual::Window window;
 	world::World world;
