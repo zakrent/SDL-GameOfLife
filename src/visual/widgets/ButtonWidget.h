@@ -6,8 +6,8 @@
 #define SDL_GOL_BUTTONWIDGET_H
 
 #include <functional>
-#include "TextureWrapper.h"
-#include "Window.h"
+#include "../renderer/TextureWrapper.h"
+#include "../Window.h"
 
 namespace visual {
 	class ButtonWidget : public WindowWidget{

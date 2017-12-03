@@ -1,8 +1,8 @@
 #ifndef GOL_WORLD_WIDGET
 #define GOL_WORLD_WIDGET
 
-#include "Window.h"
-#include "../world/World.h"
+#include "../Window.h"
+#include "../../world/World.h"
 
 namespace visual{
 	class WorldWidget : public WindowWidget{

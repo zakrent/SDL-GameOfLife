@@ -1,6 +1,6 @@
 #include "Program.h"
-#include "visual/ButtonWidget.h"
-#include "visual/Renderer.h"
+#include "visual/widgets/ButtonWidget.h"
+#include "visual/renderer/Renderer.h"
 
 Program::Program() : world(40,40){
 	paused = false;

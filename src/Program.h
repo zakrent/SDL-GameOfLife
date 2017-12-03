@@ -4,7 +4,7 @@
 #include "visual/Window.h"
 #include "world/World.h"
 #include "world/WorldUpdater.h"
-#include "visual/WorldWidget.h"
+#include "visual/widgets/WorldWidget.h"
 #include "world/WorldSaver.h"
 #include <SDL.h>
 #include <functional>
