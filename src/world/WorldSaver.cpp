@@ -14,7 +14,7 @@ namespace world {
 		file<<world.getWidth()<<"\n";
 		for(int y = 0; y < world.getHeigth(); y++){
 			for(int x = 0; x < world.getWidth(); x++){
-				file<<(world.getCell(x,y).getAlive() ? "A\n" : "D\n");
+				file<<(world.getCell(x,y).getAlive() ? "A " : "D ");
 			}
 		}
 		file.close();
@@ -33,7 +33,8 @@ namespace world {
 		World newWorld(heigth,width);
 		for(int y = 0; y < heigth; y++){
 			for(int x = 0; x < width; x++){
-				std::getline(file, line);
+				//std::getline(file, line);
+				file>>line;
 				newWorld.setCell(x,y, line == "A");
 			}
 		}
