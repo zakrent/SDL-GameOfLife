@@ -9,17 +9,17 @@
 
 namespace visual {
 
-    class TextureWrapper {
-    private:
-        SDL_Texture *texturePointer;
-    public:
-        SDL_Texture *getTexturePointer();
-        void loadFromFile(SDL_Renderer *renderer, char *filePath);
-    public:
-        TextureWrapper();
-        TextureWrapper(SDL_Renderer *renderer, char *filePath);
-        ~TextureWrapper();
-    };
+	class TextureWrapper {
+	private:
+		SDL_Texture *texturePointer;
+	public:
+		SDL_Texture *getTexturePointer();
+		void loadFromFile(SDL_Renderer *renderer, char *filePath);
+	public:
+		TextureWrapper();
+		TextureWrapper(SDL_Renderer *renderer, char *filePath);
+		~TextureWrapper();
+	};
 }
 
 

@@ -11,14 +11,14 @@
 
 class Program{
 	const int MIN_UPDATE_TIME = 100;
-    bool paused;
+	bool paused;
 	visual::Window window;
 	world::World world;
 	world::IWorldUpdater* worldUpdater;
-    world::IWorldSaver* worldSaver;
+	world::IWorldSaver* worldSaver;
 public:
 	void startMainLoop();
-    void togglePause();
+	void togglePause();
 public:
 	Program();
 	~Program();

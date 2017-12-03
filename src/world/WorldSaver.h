@@ -8,15 +8,15 @@
 #include "World.h"
 
 namespace world{
-    struct IWorldSaver{
-        virtual void saveWorld(World world) = 0;
-        virtual World loadWorld() = 0;
-    };
+	struct IWorldSaver{
+		virtual void saveWorld(World world) = 0;
+		virtual World loadWorld() = 0;
+	};
 
-    class TextWorldSaver : public  IWorldSaver{
-        void saveWorld(World world) override;
-        World loadWorld() override;
-    };
+	class TextWorldSaver : public  IWorldSaver{
+		void saveWorld(World world) override;
+		World loadWorld() override;
+	};
 }
 
 

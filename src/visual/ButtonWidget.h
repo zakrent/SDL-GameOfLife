@@ -10,17 +10,17 @@
 #include "Window.h"
 
 namespace visual {
-    class ButtonWidget : public WindowWidget{
-        textureID texture;
-        const int heigth = 100;
-        const int width = 133;
-        std::function<void()> callback; //function to call on click
-    public:
-        void render(Renderer& renderer) override;
-        void handleClick(int x, int y) override;
+	class ButtonWidget : public WindowWidget{
+		textureID texture;
+		const int heigth = 100;
+		const int width = 133;
+		std::function<void()> callback; //function to call on click
+	public:
+		void render(Renderer& renderer) override;
+		void handleClick(int x, int y) override;
 
-        ButtonWidget(int _id, int _x, int _y, Window* _window, std::function<void()> callback, textureID texture);
-    };
+		ButtonWidget(int _id, int _x, int _y, Window* _window, std::function<void()> callback, textureID texture);
+	};
 }
 
 

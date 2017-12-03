@@ -10,12 +10,12 @@ namespace visual{
 	class Window;
 
 	class WindowWidget{
-    protected:
+	protected:
 		int id;
 		int x, y;
 		bool active;
 		Window* window;
-    public:
+	public:
 		int getX(){return x;}
 		int getY(){return y;}
 		int getId(){return id;}
