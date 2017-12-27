@@ -1,0 +1,10 @@
+# the name of the target operating system
+SET(CMAKE_SYSTEM_NAME Windows)
+
+set(COMPILER_PREFIX "x86_64-w64-mingw32")
+find_program(CMAKE_RC_COMPILER NAMES ${COMPILER_PREFIX}-windres)
+find_program(CMAKE_C_COMPILER NAMES ${COMPILER_PREFIX}-gcc)
+find_program(CMAKE_CXX_COMPILER NAMES ${COMPILER_PREFIX}-g++)
+
+set(CMAKE_C_COMPILER_WORKS 1)
+set(CMAKE_CXX_COMPILER_WORKS 1)

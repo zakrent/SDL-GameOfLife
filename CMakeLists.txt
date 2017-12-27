@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 project(SDL-GOL)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_subdirectory(./lib)
 
@@ -17,4 +18,4 @@ target_link_libraries(SDL-GOL SDL2-static SDL2main)
 
 include_directories(${SDL2_SOURCE_DIR}/include)
 
-file(COPY textures/ DESTINATION textures/)
+file(COPY textures/ DESTINATION bin/textures/)
